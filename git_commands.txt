@@ -1,1 +1,5 @@
 git remote show origin - show the remote url
+
+git pull - take the code from git
+
+git push - send the code to the git
