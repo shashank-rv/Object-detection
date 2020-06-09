@@ -1,9 +1,16 @@
+import numpy as np
+from PIL import Image
+from skimage import io
+from tqdm import tqdm
+
+path = "path of the image"
+
 def datagenerator(images,labels,batchsize, mode="train"):
     while True:
         start = 0
         end = batchsize
-        while start  < len(unique_images): 
-            x = unique_images[start:end] 
+        while start  < len(images): 
+            x = images[start:end] 
             images_list=[]
             for i in x:
                 images_list.append(io.imread(path+i))
